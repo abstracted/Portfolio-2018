@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('gt-sectra-display-medium-webfont.woff2') format('woff2'),
+       url('gt-sectra-display-medium-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('gt-sectra-display-medium-italic-webfont.woff2') format('woff2'),
+       url('gt-sectra-display-medium-italic-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('gt-sectra-display-regular-webfont.woff2') format('woff2'),
+       url('gt-sectra-display-regular-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('gt-sectra-display-regular-italic-webfont.woff2') format('woff2'),
+       url('gt-sectra-display-regular-italic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('gt-sectra-display-light-webfont.woff2') format('woff2'),
+       url('gt-sectra-display-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('gt-sectra-display-light-italic-webfont.woff2') format('woff2'),
+       url('gt-sectra-display-light-italic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('FuturaPT-DemiBold.woff2') format('woff2'),
+      url('FuturaPT-DemiBold.woff') format('woff'),
+      url('FuturaPT-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('FuturaPT-DemiBoldOblique.woff2') format('woff2'),
+      url('FuturaPT-DemiBoldOblique.woff') format('woff'),
+      url('FuturaPT-DemiBoldOblique.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('FuturaPT-Medium.woff2') format('woff2'),
+      url('FuturaPT-Medium.woff') format('woff'),
+      url('FuturaPT-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('FuturaPT-MediumOblique.woff2') format('woff2'),
+      url('FuturaPT-MediumOblique.woff') format('woff'),
+      url('FuturaPT-MediumOblique.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('FuturaPT-Light.woff2') format('woff2'),
+      url('FuturaPT-Light.woff') format('woff'),
+      url('FuturaPT-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('FuturaPT-LightOblique.woff2') format('woff2'),
+      url('FuturaPT-LightOblique.woff') format('woff'),
+      url('FuturaPT-LightOblique.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+.heading, h1, h2, h3, h4 {
+  font-family: 'GT Sectra';
+  color: #dfd1cf;
+}
+
+.body, p, a {
+  font-family: 'Futura PT';
+  color: #dfd1cf;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.normal {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: #c69c9b;
+  color: #aaa4ab;
+}
