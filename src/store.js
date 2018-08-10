@@ -18,7 +18,7 @@ export default new Vuex.Store({
         description: 'Pixagen is a digital image exploration utility & creative inspiration catalyst. With Pixagen, I wanted to automate the process of discovering ideas I wouldn\'t have normally thought of.',
         year: '2018',
         role: 'Developer, Designer',
-        links: { 'live site': 'https://gitlab.com/abstracted1/Pixagen', tutorial: 'https://youtu.be/Uzk18DmrfwM' },
+        links: { 'live site': 'https:/pixagen.app', 'gitlab': 'https://gitlab.com/abstracted1/Pixagen', tutorial: 'https://youtu.be/Uzk18DmrfwM' },
         technologies: ['javascript', 'vuejs', 'vuetifyjs', 'material design', 'mvvm', 'html', 'css', 'illustrator'],
         screenshots: { folder: 'pixagen', amount: 14 }
       },

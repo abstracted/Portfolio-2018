@@ -25,6 +25,11 @@ export default {
   width 100vw
   pointer-events none
 
+  @media only screen and (max-width: 1100px)
+    margin-top 0px
+    padding-top 30px
+    padding-bottom 30px
+
 .logo
   width 70px
   margin-left 50px
@@ -32,12 +37,20 @@ export default {
   fill #dfd1cf
   pointer-events fill
 
+  @media only screen and (max-width: 1100px)
+    margin-left 30px
+    width 50px
+
 .nav
   float right
   margin-right 60px
   margin-top 15px
   text-decoration none
-  font-size 14pt
+  font-size 12pt
   letter-spacing 2px
   pointer-events fill
+
+  @media only screen and (max-width: 1100px)
+    margin-right 40px
+    margin-top 5px
 </style>

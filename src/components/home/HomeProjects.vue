@@ -35,7 +35,14 @@ export default {
   line-height 70px
   cursor pointer
 
+  @media only screen and (max-width: 1100px)
+    font-size 30px
+    line-height 60px
+
 .home-project-year
   font-size 12px
   opacity 0.75
+
+  @media only screen and (max-width: 1100px)
+    font-size 10px
 </style>

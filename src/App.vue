@@ -1,6 +1,10 @@
 <template>
   <div id="app">
     <app-header />
+    <div class="small-viewport body light">
+      <div>Welcome to the portfolio of Cameron Sanders.</div>
+      <div>Please view on the desktop for a better experience.</div>
+    </div>
     <div class="overlay overlay-modal nodisplay"></div>
     <div class="overlay overlay-edges"></div>
     <router-view class="content" />
@@ -49,6 +53,24 @@ export default {
 }
 </script>
 <style lang="stylus">
+.small-viewport
+  display none
+  padding 60px
+  font-size 28px
+  line-height 32px
+  > div
+    margin-bottom 30px
+
+@media only screen and (max-width: 640px)
+  *:not(.home-content)
+    display none
+
+  html, body, #app, .content, .home-contact, .home-contact *, .small-viewport, .small-viewport *
+    display block !important
+
+  .home-contact .li
+    display flex !important
+
 body
   background-color #5c5b6f
 
@@ -71,6 +93,7 @@ body
   transition all 600ms
   z-index 300 !important
   pointer-events auto
+  cursor zoom-out
 
 .header
   z-index 200
@@ -85,8 +108,29 @@ body
   > *
     z-index 0
 
+  @media only screen and (max-width: 1100px)
+    margin-left 120px
+    margin-right 120px
+    margin-top 120px
+    padding-bottom 120px
+
+  @media only screen and (max-width: 640px)
+    margin-left 90px
+    margin-right 90px
+    margin-top 90px
+    padding-bottom 90px
+
+  @media only screen and (max-width: 480px)
+    margin-left 60px
+    margin-right 60px
+    margin-top 60px
+    padding-bottom 60px
+
 .section
   margin-bottom 180px
+
+  @media only screen and (max-width: 1100px)
+    margin-bottom 120px
 
 .section-title
   font-family 'Futura PT'
@@ -98,6 +142,10 @@ body
   text-transform lowercase
   letter-spacing 4px
   font-style italic
+
+  @media only screen and (max-width: 1100px)
+    font-size 16px
+    margin-bottom 20px
 
 .li
   position relative
@@ -112,6 +160,17 @@ body
     display flex
     justify-content center
     align-items center
+
+    @media only screen and (max-width: 1100px)
+      margin-right 20px
+      width 20px
+      height 20px
+
+    > .bullet-circle
+      background-color #dfd1cf
+      border-radius 100%
+      height 8px
+      width 8px
 
   .line
     background-color #dfd1cf
@@ -162,6 +221,9 @@ body
   -webkit-text-fill-color transparent
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
+
+  @media only screen and (max-width: 900px)
+    -webkit-text-stroke 0.5px #dfd1cf
 
 .animated-gradient
   animation animatedGradient 1.5s linear 100ms infinite reverse

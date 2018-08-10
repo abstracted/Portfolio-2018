@@ -45,6 +45,10 @@ export default {
   line-height 50px
   font-size 20px
 
+  @media only screen and (max-width: 1100px)
+    font-size 18px
+    line-height 48px
+
 .icon
   width 20px
   height 20px

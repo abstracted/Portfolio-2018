@@ -44,12 +44,26 @@ export default {
   font-size 4.2vw
   line-height 4.2vw
 
+  @media only screen and (max-width: 900px)
+    display block
+    text-align left
+
   > div
     width 100%
+
+    @media only screen and (max-width: 900px)
+      width auto
+      display inline
+      margin-right 5px
+      word-break break-word
 
   @media screen and (min-width: 1700px)
     font-size 425%
     line-height 100%
+
+  @media only screen and (max-width: 900px)
+    font-size 200%
+    line-height 120%
 
 .about-name, .about-kool
   cursor pointer

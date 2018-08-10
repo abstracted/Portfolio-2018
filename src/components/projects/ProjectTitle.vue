@@ -19,4 +19,9 @@ export default {
   text-transform capitalize
   z-index 200
   position relative
+
+  @media only screen and (max-width: 1100px)
+    margin-top -90px
+    margin-left -3px
+    font-size 38px
 </style>

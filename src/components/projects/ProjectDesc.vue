@@ -16,5 +16,10 @@ export default {
   margin-top 60px
   font-size 30px
   line-height 34px
-  width 640px
+  max-width 640px
+
+  @media only screen and (max-width: 1100px)
+    font-size 20px
+    width 100%
+    max-width 600px
 </style>
