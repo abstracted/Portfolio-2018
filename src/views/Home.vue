@@ -7,16 +7,18 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HomeTitles from '@/components/organisms/HomeTitles.vue'
-import HomeProjects from '@/components/organisms/HomeProjects.vue'
-import Contact from '@/components/organisms/Contact.vue'
+import HomeTitles from '@/components/home/HomeTitles.vue'
+import HomeProjects from '@/components/home/HomeProjects.vue'
+import Contact from '@/components/general/Contact.vue'
 export default {
   name: 'home',
   components: {
     HomeTitles,
     HomeProjects,
     Contact
+  },
+  mounted () {
+    window.scroll(0, 0)
   }
 }
 </script>

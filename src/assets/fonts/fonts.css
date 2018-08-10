@@ -110,6 +110,10 @@
   color: #dfd1cf;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .bold {
   font-weight: 600;
 }

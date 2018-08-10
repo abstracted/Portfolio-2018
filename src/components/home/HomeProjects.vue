@@ -5,24 +5,27 @@
          v-for="project in projects"
          :key="project.name">
       <div class="home-project-year body light bullet">
-        <div>{{ project.info.year }}</div>
+        <div>{{ project.year }}</div>
       </div>
-      <div class="home-project heading item">
+      <router-link class="home-project heading light item"
+                   :to="{ name: 'projects', params: { name: getURLParam(project.name) }}">
         {{ project.name }}
         <div class="line"></div>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
 <script>
 export default {
+  methods: {
+    getURLParam (name) {
+      return name.replace(/\s+/gm, '-')
+    }
+  },
   computed: {
     projects () {
       return this.$store.state.projects
     }
-  },
-  mounted () {
-    console.log(this.projects)
   }
 }
 </script>

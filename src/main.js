@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
 import store from './store'
+import 'animate.css'
 import 'reset-css'
 import './assets/fonts/fonts.css'
 

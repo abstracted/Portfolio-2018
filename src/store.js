@@ -15,67 +15,84 @@ export default new Vuex.Store({
     projects: [
       {
         name: 'pixagen',
-        description: 'Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet',
-        info: {
-          year: '2018',
-          role: 'Developer, Designer',
-          link: 'https://pixagen.app'
-        },
-        screenshots: ['http://limitunknown.com/blah.jpg'],
-        technologies: ['javascript', 'vuejs', 'vuetifyjs', 'material design', 'html', 'css', 'illustrator']
+        description: 'Pixagen is a digital image exploration utility & creative inspiration catalyst. With Pixagen, I wanted to automate the process of discovering ideas I wouldn\'t have normally thought of.',
+        year: '2018',
+        role: 'Developer, Designer',
+        links: { 'live site': 'https://gitlab.com/abstracted1/Pixagen', tutorial: 'https://youtu.be/Uzk18DmrfwM' },
+        technologies: ['javascript', 'vuejs', 'vuetifyjs', 'material design', 'mvvm', 'html', 'css', 'illustrator'],
+        screenshots: { folder: 'pixagen', amount: 14 }
+      },
+      {
+        name: 'google images scraper',
+        description: 'Google images metadata scraper is a nodejs and puppeteer powered google images custom api. When I created it, I wanted the ability to obtain the related images links that google,  generates along with the images. This API\'s primarily purpose was the image gatherer in my Pixagen project.',
+        year: '2018',
+        role: 'Developer',
+        links: { gitlab: 'https://gitlab.com/abstracted1/gimgmetadata' },
+        technologies: ['javascript', 'vuejs', 'vuetifyjs', 'material design', 'html', 'css', 'illustrator'],
+        screenshots: false
       },
       {
         name: 'spintax editor',
-        description: 'Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet',
-        info: {
-          year: '2017',
-          role: 'Developer',
-          link: 'https://limitunknown.com/projects/spintax'
-        },
-        screenshots: ['http://limitunknown.com/blah.jpg'],
-        technologies: ['javascript', 'regex', 'html', 'css']
-      },
-      {
-        name: 'red river logistics',
-        description: 'Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet',
-        info: {
-          year: '2016',
-          role: 'Developer, Designer, Branding, Video Editor',
-          link: 'https://redriverlogistics.com'
-        },
-        screenshots: ['http://limitunknown.com/blah.jpg'],
-        technologies: ['photoshop', 'illustrator', 'php', 'javascript', 'html', 'css', 'wordpress']
+        description: 'Spintax editor is a tool for copy writers to edit spintax with syntax highlighting and error checking. In addition to this tool, I also created a version for Sublime Text.',
+        year: '2017',
+        role: 'Developer',
+        links: { 'live site': 'https://portfolio.limitunknown.com/projects/spintax' },
+        technologies: ['javascript', 'oop', 'regex', 'html', 'css'],
+        screenshots: false
       },
       {
         name: 'seo keyword checker',
-        description: 'Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet',
-        info: {
-          year: '2015',
-          role: 'Developer',
-          link: 'https://codepen.io/abstracted/pen/demQWP'
-        },
-        screenshots: ['http://limitunknown.com/blah.jpg'],
-        technologies: ['javascript', 'jquery', 'regex', 'html', 'css']
+        description: 'Seo keyword checker was created to be a lightweight replacement for the Yoast SEO Wordpress plugin. The demo listed below is a stripped down version that can be integrated into any platform.',
+        year: '2016',
+        role: 'Developer',
+        links: { codepen: 'https://codepen.io/abstracted/pen/demQWP' },
+        technologies: ['javascript', 'jquery', 'regex', 'html', 'css'],
+        screenshots: false
+      },
+      {
+        name: 'red river logistics',
+        description: 'While working with Red River Logistics, I created a variety of marketing materials including their corporate branding and website.',
+        year: '2015',
+        role: 'Developer, Designer, Branding, Video Editor',
+        links: { 'live site': 'https://redriverlogistics.com', 'presentation': 'https://portfolio.limitunknown.com/projects/rrl_presentation.pptx', 'promo video': 'https://youtu.be/gRlDYBkWP1c', 'hero video': 'https://youtu.be/OzWJmbf_6gE' },
+        technologies: ['photoshop', 'illustrator', 'php', 'javascript', 'html', 'css', 'wordpress'],
+        screenshots: { folder: 'rrl', amount: 7 }
+      },
+      {
+        name: 'hancock criminal defense',
+        description: 'This was a small project I took on to help a local attorney with their website design. The result was a custom wordpress theme with custom post types to suit their needs.',
+        year: '2015',
+        role: 'Developer, Designer',
+        links: { 'live site': 'https://portfolio.limitunknown.com/projects/criminaldefence' },
+        technologies: ['photoshop', 'illustrator', 'php', 'html', 'css', 'wordpress'],
+        screenshots: { folder: 'criminaldefense', amount: 4 }
+      },
+      {
+        name: 'lamp stack installer',
+        description: 'Created for a company that needed a way to spin up bare metal lamp stack environments. The result is an automated LAMP stack installer that sets up webmin and letsencrypt.',
+        year: '2014',
+        role: 'Developer',
+        links: { gitlab: 'https://gitlab.com/snippets/1721917' },
+        technologies: ['bash', 'webmin'],
+        screenshots: false
       },
       {
         name: 'bash scripting guide',
-        description: 'Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet',
-        info: {
-          year: '2014',
-          role: 'Writer'
-        },
-        screenshots: ['http://limitunknown.com/blah.jpg'],
-        technologies: ['bash', 'indesign']
+        description: 'Due to my involvement in the Linux Academy community, I was contracted to create a bash scripting guide for one of their courses. The guide itself is a high level overview of bash for people with existing basic programming knowledge.',
+        year: '2014',
+        role: 'Writer',
+        links: { guide: 'https://portfolio.limitunknown.com/projects/bash_guide.pdf' },
+        technologies: ['bash', 'indesign'],
+        screenshots: false
       },
       {
         name: 'code.org poster',
-        description: 'Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor amet',
-        info: {
-          year: '2014',
-          role: 'Designer'
-        },
-        screenshots: ['http://limitunknown.com/blah.jpg'],
-        technologies: ['photoshop', 'illustrator', 'Lightwave 3D']
+        description: 'Created for a design contest in my college. This is a poster created for Code.org encouraging children, specifically girls, to get into code.',
+        year: '2014',
+        role: 'Designer',
+        links: { poster: 'https://portfolio.limitunknown.com/projects/code_org.png' },
+        technologies: ['photoshop', 'illustrator', 'lightwave 3D'],
+        screenshots: { folder: 'codeorg', amount: 6 }
       }
     ]
   },
