@@ -1,11 +1,11 @@
 <template>
   <div class="project-screenshots section body light">
-    <div class="section-title">screenshots</div>
+    <div class="section-title body">screenshots</div>
     <div class="screenshots-container">
       <div v-for="index in screenshots.amount"
            :key="index"
            :style="getStyle(index)"
-           class="screenshot-item"
+           class="screenshot-item hvr-bob"
            @click="modal(index)">
       </div>
     </div>
@@ -100,8 +100,8 @@ export default {
   justify-content space-between
   align-items center
   flex-wrap wrap
-  width 65%
-  max-width 600px
+  width 50%
+  max-width 500px
 
   > .screenshot-item
     width 48%
@@ -112,9 +112,9 @@ export default {
     border-radius 10px
     transition all 400ms
     transition-delay 200ms
-    opacity 0.6
+    opacity 0.8
     filter grayscale(25%)
-    cursor pointer
+    cursor zoom-in
 
   > .screenshot-item:hover
     opacity 1

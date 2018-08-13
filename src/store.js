@@ -18,25 +18,25 @@ export default new Vuex.Store({
         description: 'Pixagen is a digital image exploration utility & creative inspiration catalyst. With Pixagen, I wanted to automate the process of discovering ideas I wouldn\'t have normally thought of.',
         year: '2018',
         role: 'Developer, Designer',
-        links: { 'live site': 'https:/pixagen.app', 'gitlab': 'https://gitlab.com/abstracted1/Pixagen', tutorial: 'https://youtu.be/Uzk18DmrfwM' },
-        technologies: ['javascript', 'vuejs', 'vuetifyjs', 'material design', 'mvvm', 'html', 'css', 'illustrator'],
+        links: { 'live site': 'https://pixagen.app', 'gitlab': 'https://gitlab.com/abstracted1/Pixagen', tutorial: 'https://youtu.be/Uzk18DmrfwM' },
+        technologies: ['es6', 'vuejs', 'vuetifyjs', 'vuex', 'vue router', 'material design', 'axios'],
         screenshots: { folder: 'pixagen', amount: 14 }
       },
       {
-        name: 'google images scraper',
-        description: 'Google images metadata scraper is a nodejs and puppeteer powered google images custom api. When I created it, I wanted the ability to obtain the related images links that google,  generates along with the images. This API\'s primarily purpose was the image gatherer in my Pixagen project.',
+        name: 'google images api',
+        description: 'Google images metadata scraper is a nodejs and puppeteer powered google images custom api. When I created it, I wanted the ability to obtain the related images links that google generates along with the images. This API\'s primarily purpose was the image gatherer in my Pixagen project.',
         year: '2018',
         role: 'Developer',
         links: { gitlab: 'https://gitlab.com/abstracted1/gimgmetadata' },
-        technologies: ['javascript', 'vuejs', 'vuetifyjs', 'material design', 'html', 'css', 'illustrator'],
+        technologies: ['es6', 'nodejs', 'puppeteer', 'bash', 'axios'],
         screenshots: false
       },
       {
         name: 'spintax editor',
-        description: 'Spintax editor is a tool for copy writers to edit spintax with syntax highlighting and error checking. In addition to this tool, I also created a version for Sublime Text.',
+        description: 'This was created for an SEO web agency in Dallas to improve the quality articles written by copy writers. Spintax editor is a tool for copy writers to edit spintax with syntax highlighting and error checking.',
         year: '2017',
         role: 'Developer',
-        links: { 'live site': 'https://portfolio.limitunknown.com/projects/spintax' },
+        links: { 'live site': 'http://portfolio.limitunknown.com/projects/spintax' },
         technologies: ['javascript', 'oop', 'regex', 'html', 'css'],
         screenshots: false
       },
@@ -54,7 +54,7 @@ export default new Vuex.Store({
         description: 'While working with Red River Logistics, I created a variety of marketing materials including their corporate branding and website.',
         year: '2015',
         role: 'Developer, Designer, Branding, Video Editor',
-        links: { 'live site': 'https://redriverlogistics.com', 'presentation': 'https://portfolio.limitunknown.com/projects/rrl_presentation.pptx', 'promo video': 'https://youtu.be/gRlDYBkWP1c', 'hero video': 'https://youtu.be/OzWJmbf_6gE' },
+        links: { 'live site': 'https://redriverlogistics.com', 'presentation': 'http://portfolio.limitunknown.com/projects/rrl_presentation.pptx', 'promo video': 'https://youtu.be/gRlDYBkWP1c', 'hero video': 'https://youtu.be/OzWJmbf_6gE' },
         technologies: ['photoshop', 'illustrator', 'php', 'javascript', 'html', 'css', 'wordpress'],
         screenshots: { folder: 'rrl', amount: 7 }
       },
@@ -63,7 +63,7 @@ export default new Vuex.Store({
         description: 'This was a small project I took on to help a local attorney with their website design. The result was a custom wordpress theme with custom post types to suit their needs.',
         year: '2015',
         role: 'Developer, Designer',
-        links: { 'live site': 'https://portfolio.limitunknown.com/projects/criminaldefence' },
+        links: { 'live site': 'http://portfolio.limitunknown.com/projects/criminaldefense' },
         technologies: ['photoshop', 'illustrator', 'php', 'html', 'css', 'wordpress'],
         screenshots: { folder: 'criminaldefense', amount: 4 }
       },
@@ -81,7 +81,7 @@ export default new Vuex.Store({
         description: 'Due to my involvement in the Linux Academy community, I was contracted to create a bash scripting guide for one of their courses. The guide itself is a high level overview of bash for people with existing basic programming knowledge.',
         year: '2014',
         role: 'Writer',
-        links: { guide: 'https://portfolio.limitunknown.com/projects/bash_guide.pdf' },
+        links: { guide: 'http://portfolio.limitunknown.com/projects/bash_guide.pdf' },
         technologies: ['bash', 'indesign'],
         screenshots: false
       },
@@ -90,7 +90,7 @@ export default new Vuex.Store({
         description: 'Created for a design contest in my college. This is a poster created for Code.org encouraging children, specifically girls, to get into code.',
         year: '2014',
         role: 'Designer',
-        links: { poster: 'https://portfolio.limitunknown.com/projects/code_org.png' },
+        links: { poster: 'http://portfolio.limitunknown.com/projects/code_org.png' },
         technologies: ['photoshop', 'illustrator', 'lightwave 3D'],
         screenshots: { folder: 'codeorg', amount: 6 }
       }

@@ -1,11 +1,10 @@
 <template>
   <div class="header">
     <router-link :to="{ name: 'home' }">
-      <logo class="logo" />
+      <logo class="logo hvr-shrink" />
     </router-link>
-    <router-link class="heading nav"
-                 :to="{name: 'about'}">
-      about
+    <router-link :to="{name: 'about'}">
+      <div class="heading nav light hvr-shrink">about</div>
     </router-link>
   </div>
 </template>
@@ -46,11 +45,12 @@ export default {
   margin-right 60px
   margin-top 15px
   text-decoration none
-  font-size 12pt
+  font-size 16pt
   letter-spacing 2px
   pointer-events fill
 
   @media only screen and (max-width: 1100px)
+    font-size 12pt
     margin-right 40px
     margin-top 5px
 </style>

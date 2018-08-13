@@ -58,6 +58,8 @@ export default {
   padding 60px
   font-size 28px
   line-height 32px
+  margin-bottom -100px
+
   > div
     margin-bottom 30px
 
@@ -127,13 +129,12 @@ body
     padding-bottom 60px
 
 .section
-  margin-bottom 180px
+  margin-bottom 140px
 
   @media only screen and (max-width: 1100px)
-    margin-bottom 120px
+    margin-bottom 80px
 
 .section-title
-  font-family 'Futura PT'
   font-weight 300
   font-size 20px
   color #dfd1cf
@@ -174,13 +175,14 @@ body
 
   .line
     background-color #dfd1cf
-    width 50%
+    width 40%
     height 1px
     opacity 0
     margin-top -5px
     margin-bottom 5px
-    transform rotate(10deg)
-    transition all 500ms
+    transition all 900ms
+    transition-delay 100ms
+    transform rotate(5deg)
 
   .tooltip
     opacity 0
@@ -188,7 +190,7 @@ body
     top -5px
     left 0px
     padding 10px
-    background-color rgba(92, 91, 111, 0.8)
+    background-color rgba(92, 91, 111, 0.9)
     border 1px solid #dfd1cf
     border-radius 8px
     font-size 15px
@@ -197,18 +199,20 @@ body
     transition all 500ms
     transform rotate(-10deg)
     pointer-events none
+    -webkit-font-smoothing auto
+    -moz-osx-font-smoothing auto
 
   :hover .line
     width 95%
-    transform rotate(0deg)
     opacity 1
+    transform rotate(0deg)
 
   :hover .tooltip
     top -30px
     left -30px
     letter-spacing 1px
     transform rotate(0deg)
-    opacity 0.8
+    opacity 0.9
 
 .nodisplay
   display none !important
@@ -217,7 +221,7 @@ body
   -webkit-text-stroke 1px #dfd1cf
   background -webkit-linear-gradient(40deg, rgba(198, 156, 155, 0.6), rgba(112, 113, 134, 0.6), rgba(223, 209, 207, 0.6))
   background-size 200% auto
-  -webkit-background-clip text
+  -webkit-background-clip text !important
   -webkit-text-fill-color transparent
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale

@@ -4,6 +4,7 @@ import router from './router'
 import './registerServiceWorker'
 import store from './store'
 import 'animate.css'
+import 'hover.css'
 import 'reset-css'
 import './assets/fonts/fonts.css'
 

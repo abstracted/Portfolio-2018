@@ -1,6 +1,6 @@
 <template>
   <div class="home-contact section">
-    <div class="section-title">contact</div>
+    <div class="section-title body">contact</div>
     <div class="li"
          v-for="(item, property) in contact"
          :key="property">
@@ -8,10 +8,10 @@
         <component class="icon"
                    :is="property"></component>
       </div>
-      <div class="body light item contact-item">
+      <div class="body light item contact-item hvr">
         <div class="tooltip">{{ property }}</div>
-        <a :href="item.link">{{ item.data }}</a>
-        <div class="line"></div>
+        <a :href="item.link"
+           class="hvr-forward">{{ item.data }}</a>
       </div>
     </div>
   </div>

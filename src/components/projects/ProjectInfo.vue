@@ -1,14 +1,14 @@
 <template>
   <div class="project-info section">
-    <div class="section-title">info</div>
+    <div class="section-title body">info</div>
     <div class="info-sub year body light">
-      <span class="info-title bold">Year </span>{{ info.year }}
+      <span class="info-title">Year </span>{{ info.year }}
     </div>
     <div class="info-sub role body light">
-      <span class="info-title bold">Role </span>{{ info.role }}
+      <span class="info-title">Role </span>{{ info.role }}
     </div>
     <div class="info-sub role body light">
-      <span class="info-title bold">Links</span>
+      <span class="info-title">Links</span>
       <div class="li"
            v-for="(link, item) in info.links"
            :key="item">
@@ -16,13 +16,16 @@
           <div class="bullet-circle"></div>
         </div>
         <div class="body light item info-item">
-          <a :href="link">{{ item }}</a>
-          <div class="line"></div>
+          <a :href="link"
+             class="hvr-grow-rotate">{{ item }}
+            <div class="line"></div>
+          </a>
+
         </div>
       </div>
     </div>
     <div class="info-sub role body light">
-      <span class="info-title bold">Technologies</span>
+      <span class="info-title">Technologies</span>
       <div class="li"
            v-for="(tech, index) in info.technologies"
            :key="index">
@@ -61,10 +64,12 @@ export default {
     letter-spacing 1px
 
 .info-title
-  font-size 20px
-  letter-spacing 0px
-  margin-right 15px
+  font-size 16px
+  text-transform uppercase
+  letter-spacing 2px
+  margin-right 14px
   line-height 30px
+  font-weight 800
 
   @media only screen and (max-width: 1100px)
     font-size 16px
@@ -75,7 +80,7 @@ export default {
   line-height 50px
 
 .line
-  margin-top -8px
+  margin-top -10px
 
   @media only screen and (max-width: 1100px)
     margin-top -10px

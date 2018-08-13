@@ -1,13 +1,13 @@
 <template>
   <div class="home-projects section">
-    <div class="section-title">selected projects</div>
+    <div class="section-title body">selected projects</div>
     <div class="li"
          v-for="project in projects"
          :key="project.name">
       <div class="home-project-year body light bullet">
         <div>{{ project.year }}</div>
       </div>
-      <router-link class="home-project heading light item"
+      <router-link class="home-project heading light item hvr-rotate"
                    :to="{ name: 'projects', params: { name: getURLParam(project.name) }}">
         {{ project.name }}
         <div class="line"></div>

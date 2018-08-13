@@ -103,11 +103,15 @@
 .heading, h1, h2, h3, h4 {
   font-family: 'GT Sectra';
   color: #dfd1cf;
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
 }
 
 .body, p, a {
   font-family: 'Futura PT';
   color: #dfd1cf;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .italic {

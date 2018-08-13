@@ -1,7 +1,7 @@
 <template>
   <div class="about-bio">
     <div class="summary section">
-      <div class="section-title">bio</div>
+      <div class="section-title body">bio</div>
       <div class="body light bio">
         My skills include front and back end web developement, Linux system administration, graphic design, art direction and branding. I’m interested in the Javascript stack, aesthetic conceptualization, interactive media and storytelling.
       </div>
