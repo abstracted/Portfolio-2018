@@ -1,12 +1,14 @@
 <template>
   <div class="project-screenshots section body light">
-    <div class="section-title body">screenshots</div>
+    <div class="section-title body"
+         data-trans>screenshots</div>
     <div class="screenshots-container">
       <div v-for="index in screenshots.amount"
            :key="index"
            :style="getStyle(index)"
            class="screenshot-item hvr-bob"
-           @click="modal(index)">
+           @click="modal(index)"
+           data-trans>
       </div>
     </div>
     <div class="screenshot-modal nodisplay animated zoomIn">
@@ -110,10 +112,9 @@ export default {
     background-size cover
     background-position 50% 50%
     border-radius 10px
-    transition all 400ms
-    transition-delay 200ms
+    transition opacity, filter 400ms
     opacity 0.8
-    filter grayscale(25%)
+    filter grayscale(50%)
     cursor zoom-in
 
   > .screenshot-item:hover

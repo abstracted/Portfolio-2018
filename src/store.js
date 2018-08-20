@@ -94,12 +94,19 @@ export default new Vuex.Store({
         technologies: ['photoshop', 'illustrator', 'lightwave 3D'],
         screenshots: { folder: 'codeorg', amount: 6 }
       }
-    ]
+    ],
+    transimate: {
+      done: false
+    }
   },
   mutations: {
-
+    transimateStatus (state, payload) {
+      state.transimate.done = payload
+    }
   },
   actions: {
-
+    transimateStatus ({state, commit}, payload) {
+      commit('transimateStatus', payload)
+    }
   }
 })

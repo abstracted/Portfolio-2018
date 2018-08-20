@@ -1,17 +1,22 @@
 <template>
   <div class="project-info section">
-    <div class="section-title body">info</div>
-    <div class="info-sub year body light">
+    <div class="section-title body"
+         data-trans>info</div>
+    <div class="info-sub year body light"
+         data-trans>
       <span class="info-title">Year </span>{{ info.year }}
     </div>
-    <div class="info-sub role body light">
+    <div class="info-sub role body light"
+         data-trans>
       <span class="info-title">Role </span>{{ info.role }}
     </div>
     <div class="info-sub role body light">
-      <span class="info-title">Links</span>
+      <div class="info-title"
+           data-trans>Links</div>
       <div class="li"
            v-for="(link, item) in info.links"
-           :key="item">
+           :key="item"
+           data-trans>
         <div class="bullet">
           <div class="bullet-circle"></div>
         </div>
@@ -25,10 +30,12 @@
       </div>
     </div>
     <div class="info-sub role body light">
-      <span class="info-title">Technologies</span>
+      <div class="info-title"
+           data-trans>Technologies</div>
       <div class="li"
            v-for="(tech, index) in info.technologies"
-           :key="index">
+           :key="index"
+           data-trans>
         <div class="bullet">
           <div class="bullet-circle"></div>
         </div>

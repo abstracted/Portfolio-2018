@@ -1,5 +1,6 @@
 <template>
-  <div class="project-title heading bold">{{ title }}</div>
+  <div class="project-title heading bold"
+       data-trans>{{ title }}</div>
 </template>
 <script>
 export default {

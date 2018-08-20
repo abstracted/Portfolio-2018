@@ -1,17 +1,22 @@
 <template>
   <div class="home-contact section">
-    <div class="section-title body">contact</div>
+    <div class="section-title body"
+         data-trans>contact</div>
     <div class="li"
          v-for="(item, property) in contact"
-         :key="property">
+         :key="property"
+         data-trans>
       <div class="bullet">
         <component class="icon"
                    :is="property"></component>
       </div>
-      <div class="body light item contact-item hvr">
-        <div class="tooltip">{{ property }}</div>
+      <div class="body light item contact-item">
+        <div v-if="tooltip"
+             class="tooltip">{{ property }}</div>
         <a :href="item.link"
-           class="hvr-forward">{{ item.data }}</a>
+           class="hvr-shrink">{{ item.data }}
+          <div class="line"></div>
+        </a>
       </div>
     </div>
   </div>
@@ -25,6 +30,12 @@ import linkedin from '@/components/general/icons/Linkedin'
 import twitter from '@/components/general/icons/Twitter'
 
 export default {
+  props: {
+    tooltip: {
+      type: Boolean,
+      default: true
+    }
+  },
   components: {
     phone,
     codepen,

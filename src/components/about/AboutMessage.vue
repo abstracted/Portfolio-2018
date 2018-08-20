@@ -1,15 +1,15 @@
 <template>
   <div class="about-message section heading light">
-    <div>Hi, I’m
+    <div data-trans>Hi, I’m
       <span class="bold italic about-name gradient-text"
             ref="about-name"
             @mouseover="animate('name')"
             @mouseout="animate('stop')">Cameron</span>, a web developer &
     </div>
-    <div>digital designer based in Dallas Texas.</div>
-    <div>I enjoy working with interesting ideas,</div>
-    <div>learning new technologies</div>
-    <div>& creating
+    <div data-trans>digital designer based in Dallas Texas.</div>
+    <div data-trans>I enjoy working with interesting ideas,</div>
+    <div data-trans>learning new technologies</div>
+    <div data-trans>& creating
       <span class="bold italic about-kool gradient-text"
             ref="about-kool"
             @mouseover="animate('kool')"
@@ -52,9 +52,8 @@ export default {
     width 100%
 
     @media only screen and (max-width: 900px)
-      width auto
-      display inline
-      margin-right 5px
+      width 500px
+      font-size 30px
       word-break break-word
 
   @media screen and (min-width: 1700px)

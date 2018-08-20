@@ -1,5 +1,6 @@
 <template>
-  <div class="project-desc section body light">{{ description }}</div>
+  <div class="project-desc section body light"
+       data-trans>{{ description }}</div>
 </template>
 <script>
 export default {

@@ -1,25 +1,160 @@
 <template>
   <div id="app">
-    <app-header />
-    <div class="small-viewport body light">
-      <div>Welcome to the portfolio of Cameron Sanders.</div>
-      <div>Please view on the desktop for a better experience.</div>
+    <app-header v-if="loadingDone" />
+    <div class="small-viewport">
+      <div class="heading">limitunknown.com</div>
+      <div class="body light">Welcome to the portfolio of Cameron Sanders.</div>
+      <div class="body light">Please view on desktop for a better experience.</div>
+      <contact :tooltip="false" />
     </div>
     <div class="overlay overlay-modal nodisplay"></div>
     <div class="overlay overlay-edges"></div>
-    <router-view class="content" />
+    <div class="overlay overlay-intro"
+         v-if="!loadingDone">
+      <logo/>
+    </div>
+    <router-view class="content"
+                 v-if="loadingDone" />
   </div>
 </template>
 <script>
+import anime from 'animejs'
 import Header from '@/components/general/Header.vue'
+import Contact from '@/components/general/Contact.vue'
+import Logo from '@/components/general/Logo.vue'
 export default {
   components: {
-    'app-header': Header
+    'app-header': Header,
+    Contact,
+    Logo
+  },
+  data () {
+    return {
+      // scroll: {
+      //   delta: 0
+      // },
+      loadingDone: false
+    }
   },
   methods: {
     onClick ($event) {
-      this.screenshotModal(event)
+      this.screenshotModal($event)
     },
+    intro () {
+      // Perfectly line up
+      // right
+      // scale(0.4) translateX(-46px) translateY(0px) rotate(-70deg);
+      // left
+      // scale(0.4) translateX(25px) translateY(27px) rotate(110deg)
+      anime({
+        targets: '[data-trans-bl]',
+        scaleY: [0.04, 0.4],
+        scaleX: [0.4, 0.4],
+        translateY: [10, 27],
+        translateX: [25, 25],
+        rotate: [0, 110],
+        opacity: [0, 1],
+        duration: 1600,
+        delay (el, i, l) {
+          if (i === 0) {
+            return 800
+          } else {
+            return 1000
+          }
+        }
+      }).finished.then(() => {
+        anime({
+          targets: '[data-trans-bl]',
+          scale: [0.4, 0.2],
+          translateY: [27, 0],
+          translateX: [25, 0],
+          rotate: [110, 0],
+          opacity: [1, 1],
+          easing: 'easeOutCubic',
+          duration: 800,
+          delay: 200
+        })
+        anime({
+          targets: '[data-trans-br]',
+          scale: [0.4, 0.2],
+          translateY: [0, 0],
+          translateX: [-46, 0],
+          rotate: [-70, 0],
+          opacity: [0, 1],
+          easing: 'easeOutCubic',
+          duration: 800,
+          delay: 280
+        })
+        anime({
+          targets: '[data-trans-tl]',
+          scale: [0.08, 0.2],
+          translateY: [80, 0],
+          opacity: [0.0, 1],
+          easing: 'easeOutCubic',
+          duration: 800,
+          delay: 360
+        })
+        anime({
+          targets: '[data-trans-tr]',
+          scale: [0.08, 0.2],
+          translateY: [80, 0],
+          opacity: [0.0, 1],
+          easing: 'easeOutCubic',
+          duration: 800,
+          delay: 440
+        }).finished.then(() => {
+          anime({
+            targets: '[data-trans-bl]',
+            scale: [0.2, 0.4],
+            translateY: [0, 90],
+            opacity: [1, 0],
+            easing: 'easeInQuart',
+            duration: 500,
+            delay: 200
+          })
+          anime({
+            targets: '[data-trans-br]',
+            scale: [0.2, 0.4],
+            translateY: [0, 90],
+            opacity: [1, 0],
+            easing: 'easeInQuart',
+            duration: 500,
+            delay: 280
+          })
+          anime({
+            targets: '[data-trans-tl]',
+            scale: [0.2, 0.4],
+            translateY: [0, -90],
+            opacity: [1, 0],
+            easing: 'easeInQuart',
+            duration: 500,
+            delay: 360
+          })
+          anime({
+            targets: '[data-trans-tr]',
+            scale: [0.2, 0.4],
+            translateY: [0, -90],
+            opacity: [1, 0],
+            easing: 'easeInQuart',
+            duration: 500,
+            delay: 440
+          }).finished.then(() => {
+            this.loadingDone = true
+          })
+        })
+      })
+    },
+    // onScroll ($event) {
+    //   this.scroll.delta += event.deltaY * -1
+    //   let el = document.querySelector('.content')
+    //   let height = el.clientHeight
+    //   if (this.scroll.delta < height * -1) {
+    //     this.scroll.delta = height * -1
+    //   } if (this.scroll.delta > 0) {
+    //     this.scroll.delta = 0
+    //   }
+    //   el.style.transform = 'translateY(' + this.scroll.delta + 'px)'
+    // },
     screenshotModal (event) {
       if (event.target.getAttribute('class') !== null) {
         if (!event.target.getAttribute('class').includes('modal-image')) {
@@ -46,9 +181,12 @@ export default {
   },
   mounted: function () {
     this.$el.addEventListener('click', this.onClick)
+    // window.addEventListener('wheel', this.onScroll)
+    this.intro()
   },
   beforeDestroy: function () {
     this.$el.removeEventListener('click', this.onClick)
+    // window.removeEventListener('wheel', this.onScroll)
   }
 }
 </script>
@@ -56,22 +194,32 @@ export default {
 .small-viewport
   display none
   padding 60px
-  font-size 28px
+  font-size 20px
   line-height 32px
-  margin-bottom -100px
 
-  > div
+  > .heading
     margin-bottom 30px
+
+  > .body
+    margin-bottom 10px
+
+  .section-title
+    opacity 0 !important
 
 @media only screen and (max-width: 640px)
   *:not(.home-content)
     display none
 
-  html, body, #app, .content, .home-contact, .home-contact *, .small-viewport, .small-viewport *
+  html, body, #app, .small-viewport, .small-viewport *
     display block !important
+    opacity 1 !important
+    transform translate(0) rotate(0) !important
 
   .home-contact .li
     display flex !important
+
+    .line
+      opacity 0 !important
 
 body
   background-color #5c5b6f
@@ -86,8 +234,21 @@ body
   background none
   pointer-events none
 
+.overlay-intro
+  display flex
+  justify-content center
+  align-items center
+
+  #logo
+    width 70vw
+    fill #dfd1cf
+
+    path
+      opacity 0
+      transform scale(0.2)
+
 .overlay-edges
-  background linear-gradient(to bottom, #5c5b6f 1%, rgba(82, 81, 100, 0) 15%, rgba(82, 81, 100, 0) 85%, #5c5b6f 99%)
+  background linear-gradient(to bottom, #5c5b6f 0%, rgba(82, 81, 100, 0) 5%, rgba(82, 81, 100, 0) 85%, #5c5b6f 99%)
 
 .overlay-modal
   background #5c5b6f
@@ -137,8 +298,7 @@ body
 .section-title
   font-weight 300
   font-size 20px
-  color #dfd1cf
-  opacity 0.4
+  color rgba(223, 209, 207, 0.4) !important
   margin-bottom 30px
   text-transform lowercase
   letter-spacing 4px
@@ -175,14 +335,17 @@ body
 
   .line
     background-color #dfd1cf
+    perspective 100px
+    backface-visibility hidden
     width 40%
     height 1px
     opacity 0
-    margin-top -5px
-    margin-bottom 5px
-    transition all 900ms
-    transition-delay 100ms
-    transform rotate(5deg)
+    margin-top -8px
+    margin-bottom 8px
+    margin-left 2px
+    transition all 700ms
+    transition-delay 150ms
+    transition-timing-function ease-out
 
   .tooltip
     opacity 0
@@ -205,7 +368,6 @@ body
   :hover .line
     width 95%
     opacity 1
-    transform rotate(0deg)
 
   :hover .tooltip
     top -30px
@@ -227,7 +389,7 @@ body
   -moz-osx-font-smoothing grayscale
 
   @media only screen and (max-width: 900px)
-    -webkit-text-stroke 0.5px #dfd1cf
+    -webkit-text-stroke 0.7px #dfd1cf
 
 .animated-gradient
   animation animatedGradient 1.5s linear 100ms infinite reverse
@@ -241,4 +403,9 @@ body
 
   100%
     background-position 200% auto
+
+[data-trans]
+  opacity 0
+  transform-origin bottom right !important
+  perspective 100px
 </style>

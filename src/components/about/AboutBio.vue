@@ -1,57 +1,68 @@
 <template>
   <div class="about-bio">
     <div class="summary section">
-      <div class="section-title body">bio</div>
-      <div class="body light bio">
+      <div class="section-title body"
+           data-trans>bio</div>
+      <div class="body light bio"
+           data-trans>
         My skills include front and back end web developement, Linux system administration, graphic design, art direction and branding. I’m interested in the Javascript stack, aesthetic conceptualization, interactive media and storytelling.
       </div>
-      <div class="body light bio">
+      <div class="body light bio"
+           data-trans>
         Technical skills I use on a regular basis include:
       </div>
       <div class="body light">
-        <div class="li">
+        <div class="li"
+             data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
           <div class="item">Javascript (Vanilla)</div>
         </div>
-        <div class="li">
+        <div class="li"
+             data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
           <div class="item">Linux (Bash)</div>
         </div>
-        <div class="li">
+        <div class="li"
+             data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
           <div class="item">VueJS</div>
         </div>
-        <div class="li">
+        <div class="li"
+             data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
           <div class="item">HTML & CSS</div>
         </div>
-        <div class="li">
+        <div class="li"
+             data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
           <div class="item">LAMP Stack</div>
         </div>
-        <div class="li">
+        <div class="li"
+             data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
           <div class="item">Adobe Creative Suite</div>
         </div>
-        <div class="li">
+        <div class="li"
+             data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
           <div class="item">3D</div>
         </div>
-        <div class="li">
+        <div class="li"
+             data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
