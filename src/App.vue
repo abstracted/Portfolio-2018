@@ -298,7 +298,7 @@ body
 .section-title
   font-weight 300
   font-size 20px
-  color rgba(223, 209, 207, 0.4) !important
+  color rgba(223, 209, 207, 0.6) !important
   margin-bottom 30px
   text-transform lowercase
   letter-spacing 4px

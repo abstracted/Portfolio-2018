@@ -5,11 +5,11 @@
            data-trans>bio</div>
       <div class="body light bio"
            data-trans>
-        My skills include front and back end web developement, Linux system administration, graphic design, art direction and branding. I’m interested in the Javascript stack, aesthetic conceptualization, interactive media and storytelling.
+        My skills include full stack web developement, graphic design, art direction and branding. With a savvy awareness of the digital landscape, as well as a thorough understanding of project needs, I am confident in guiding products from idea to launch.
       </div>
       <div class="body light bio"
            data-trans>
-        Technical skills I use on a regular basis include:
+        Some of my capabilities include:
       </div>
       <div class="body light">
         <div class="li"
@@ -17,57 +17,54 @@
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
-          <div class="item">Javascript (Vanilla)</div>
+          <div class="item">Javascript ES6</div>
         </div>
         <div class="li"
              data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
-          <div class="item">Linux (Bash)</div>
+          <div class="item">Object Oriented Javascript</div>
         </div>
         <div class="li"
              data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
-          <div class="item">VueJS</div>
+          <div class="item">HTML5 & CSS3</div>
         </div>
         <div class="li"
              data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
-          <div class="item">HTML & CSS</div>
+          <div class="item">PHP Programming</div>
         </div>
         <div class="li"
              data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
-          <div class="item">LAMP Stack</div>
+          <div class="item">Linux (Certified)</div>
         </div>
         <div class="li"
              data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
-          <div class="item">Adobe Creative Suite</div>
+          <div class="item">Graphic Design</div>
         </div>
         <div class="li"
              data-trans>
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
-          <div class="item">3D</div>
+          <div class="item">3D Modeling</div>
         </div>
-        <div class="li"
-             data-trans>
-          <div class="bullet">
-            <div class="bullet-circle"></div>
-          </div>
-          <div class="item">Ableton Live</div>
-        </div>
+      </div>
+      <div class="body light bio"
+           data-trans>
+        I am available for freelance and fulltime opportunities. Feel free to get a hold of me using the contact information below.
       </div>
     </div>
     <contact />
