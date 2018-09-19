@@ -41,24 +41,6 @@ export default new Vuex.Store({
         screenshots: false
       },
       {
-        name: 'seo keyword checker',
-        description: 'SEO Keyword Checker was created to quality check content for the article editor at Simplicity Studios. The demo listed below is a stripped down version that can be integrated into any platform.',
-        year: '2016',
-        role: 'Developer',
-        links: { codepen: 'https://codepen.io/abstracted/pen/demQWP' },
-        technologies: ['javascript', 'jquery', 'regex', 'html', 'css'],
-        screenshots: false
-      },
-      {
-        name: 'lamp stack installer',
-        description: 'Created to configure development and production environments at Simplicity Studios. The script is an automated LAMP stack installer that sets up webmin and letsencrypt.',
-        year: '2016',
-        role: 'Developer',
-        links: { gitlab: 'https://gitlab.com/snippets/1721917' },
-        technologies: ['bash', 'webmin'],
-        screenshots: false
-      },
-      {
         name: 'red river logistics',
         description: 'While working with Red River Logistics, I created a variety of marketing materials including their corporate branding and website.',
         year: '2015',
@@ -66,15 +48,6 @@ export default new Vuex.Store({
         links: { 'live site': 'https://redriverlogistics.com', 'presentation': 'http://portfolio.limitunknown.com/projects/rrl_presentation.pptx', 'promo video': 'https://youtu.be/gRlDYBkWP1c', 'hero video': 'https://youtu.be/OzWJmbf_6gE' },
         technologies: ['photoshop', 'illustrator', 'php', 'javascript', 'html', 'css'],
         screenshots: { folder: 'rrl', amount: 7 }
-      },
-      {
-        name: 'hancock criminal defense',
-        description: 'This was a small project I took on to help a local attorney with their website design. The result was a custom wordpress theme with custom post types to suit their needs.',
-        year: '2015',
-        role: 'Developer, Designer',
-        links: { 'live site': 'http://portfolio.limitunknown.com/projects/criminaldefense' },
-        technologies: ['photoshop', 'illustrator', 'php', 'html', 'css'],
-        screenshots: { folder: 'criminaldefense', amount: 4 }
       },
       {
         name: 'bash scripting guide',
