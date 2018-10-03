@@ -5,7 +5,7 @@
            data-trans>bio</div>
       <div class="body light bio"
            data-trans>
-        My skills include full stack web developement, graphic design, art direction and branding. With a savvy awareness of the digital landscape, as well as a thorough understanding of project needs, I am confident in guiding products from idea to launch.
+        My skills include full stack web developement, graphic design, art direction and branding. I am currently employed as a UI Developer, but I'm always interested in discussing new projects or collaborations.
       </div>
       <div class="body light bio"
            data-trans>
@@ -38,7 +38,7 @@
           <div class="bullet">
             <div class="bullet-circle"></div>
           </div>
-          <div class="item">PHP Programming</div>
+          <div class="item">NodeJS Programming</div>
         </div>
         <div class="li"
              data-trans>
@@ -61,10 +61,6 @@
           </div>
           <div class="item">3D Modeling</div>
         </div>
-      </div>
-      <div class="body light bio"
-           data-trans>
-        I am available for freelance and fulltime opportunities. Feel free to get a hold of me using the contact information below.
       </div>
     </div>
     <contact />

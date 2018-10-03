@@ -6,7 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     contact: {
-      phone: { data: '(682) 206 2426', link: 'tel:1-682-206-2426' },
+      // phone: { data: '(682) 206 2426', link: 'tel:1-682-206-2426' },
       email: { data: 'camerons@limitunknown.com', link: 'mailto:csanders@protonmail.com' },
       gitlab: { data: 'abstracted1', link: 'https://gitlab.com/users/abstracted1/projects' },
       linkedin: { data: 'camerons99', link: 'https://www.linkedin.com/in/camerons99/' },
