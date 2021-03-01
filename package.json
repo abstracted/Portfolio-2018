@@ -13,7 +13,7 @@
     "hover.css": "^2.3.2",
     "register-service-worker": "^1.0.0",
     "reset-css": "^4.0.1",
-    "three": "^0.95.0",
+    "three": "^0.125.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
